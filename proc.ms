@@ -27,7 +27,7 @@ proc _initQuiz(){
 }
 
 set_interval(1000, closure(){
-    @prefix = _chprefix('e')
+    @prefix = '[AutoQuiz] '
     @rand = rand(1500000,1800000)
     if (import('autoquiz.status') == 2) {
         if (time() >= import('autoquiz.settime')) {
