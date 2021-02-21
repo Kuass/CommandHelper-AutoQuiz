@@ -1,7 +1,7 @@
 include('proc.ms')
 
 bind('player_chat', null, null, @Data){
-    @prefix = _chprefix('d')
+    @prefix = '[AutoQuiz] '
     if (import('autoquiz.status') == 0, exit())
     if (@Data['message'] == import('autoquiz.question_answer')) {
         cancel()
